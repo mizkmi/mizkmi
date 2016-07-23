@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mizkmi</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>mizkmi</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+    <header id="main_h">
+        <h1>mizkmi.com</h1>
+        <p class="message">Hello, world!</p>
+        <nav>
+            <ul class="cat">
+                <li class="cat_name"># Web</li>
+                <li class="cat_name"># Project</li>
+                <li class="cat_name"># Photo</li>
+                <li class="cat_name"># Graphic</li>
+                <li class="cat_name"># VJ</li>
+            </ul>
+        </nav>
+    </header>
 <%= yield %>
-
+   
+    <footer id="main_f">
+        
+    </footer>
 </body>
 </html>
